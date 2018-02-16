@@ -34,3 +34,6 @@ test__checkHumbrId("n12345678", true);
 test__checkHumbrId("001256331", false);
 test__checkHumbrId("ABCDEFGHI", false);
 test__checkHumbrId("n1234567", false);
+test__checkHumbrId("", false);
+test__checkHumbrId(12345678, false);
+test__checkHumbrId(null, false);
