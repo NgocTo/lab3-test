@@ -18,16 +18,16 @@ function test__checkHumbrId (num, expected) {
     var result = checkHumberId(num);
     
     // check if the expected result is the same with result
-    if (result == expected) {
+    if (result === expected) {
         announcedResult = "==PASSED==";
     } else {
         announcedResult = "xxFAILEDxx";
     }
     
     // output message
-    var msg = "Value tested: " + num + "Expected result: " + expected + "<br/>";
+    var msg = "Value tested: " + num + " Expected result: " + expected + " " + announcedResult + "<br/>";
     var dt = document.getElementById("data");
-    dt += msg;
+    dt.innerHTML += msg;
 }
 // test values
 test__checkHumbrId ("N12345678", true);
