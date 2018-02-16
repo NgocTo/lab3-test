@@ -38,3 +38,4 @@ test__checkHumbrId("", false);
 test__checkHumbrId(12345678, false);
 test__checkHumbrId(null, false);
 test__checkHumbrId("N123456789", true);
+test__checkHumbrId("123N12345678", false);
