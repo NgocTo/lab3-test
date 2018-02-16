@@ -23,7 +23,7 @@ function test__checkHumbrId(num, expected) {
         announcedResult = "<span class='error'>xxFAILEDxx</span>";
     }
     // output message
-    let msg = "Value tested: " + num + " Expected result: " + expected + " " + announcedResult + "<br/>";
+    let msg = "Value tested: " + num + " Expected result: " + expected + " Result: " + result + " " + announcedResult + "<br/>";
     const dt = document.getElementById("data");
     dt.innerHTML += msg;
 }
