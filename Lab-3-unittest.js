@@ -25,7 +25,7 @@ function test__checkHumbrId (num, expected) {
     }
     
     // output message
-    var msg = "Value tested: " + num + " Expected result: " + expected + " " + announcedResult + "<br/>";
+    var msg = "Value tested: " + num + " Expected result: " + expected + " Result: " + result + " " + announcedResult + "<br/>";
     var dt = document.getElementById("data");
     dt.innerHTML += msg;
 }
