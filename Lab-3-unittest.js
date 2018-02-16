@@ -6,22 +6,22 @@
  */
 function checkHumberId(idIn) {
 	let result = false
-	const pattern = /n\d{8}$/
+	const pattern = /n\d{8}$/i
 	result=pattern.test(idIn)
 	return result
 }
 
 function test__checkHumbrId (num, expected) {
-    // "use strict";
+    "use strict";
     var announcedResult;
     // validate humber id
     var result = checkHumberId(num);
     
     // check if the expected result is the same with result
     if (result === expected) {
-        announcedResult = "==PASSED==";
+        announcedResult = "<span class='success'>==PASSED==</span>";
     } else {
-        announcedResult = "xxFAILEDxx";
+        announcedResult = "<span class='error'>xxFAILEDxx</span>";
     }
     
     // output message
