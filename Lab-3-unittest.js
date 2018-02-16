@@ -7,7 +7,7 @@
 function checkHumberId(idIn) {
     "use strict";
     let result = false;
-    const pattern = /n\d{8}$/i;
+    const pattern = /^n\d{8}$/i;
     result = pattern.test(idIn);
     return result;
 }
